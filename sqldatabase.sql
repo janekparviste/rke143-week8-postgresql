@@ -1,3 +1,9 @@
+CREATE DATABASE myrecipes;
+
+\l
+
+\dt
+
 CREATE TABLE recipe (
     id SERIAL PRIMARY KEY,
     recipeName VARCHAR(55)
