@@ -22,9 +22,6 @@ CREATE TABLE IngredientInRecipe (
     FOREIGN KEY (ingredientId) REFERENCES ingredient(id)
 );
 
-INSERT INTO recipe (recipeName) 
-VALUES ('Pumpkin Pasties');
-
 SELECT * FROM recipe;
 
 DELETE FROM recipe where id=2;
@@ -46,8 +43,16 @@ SELECT * FROM ingredient;
 
 DROP TABLE recipe;
 
+INSERT INTO recipe (recipeName) 
+VALUES 
+('Pumpkin Pasties'),
+('Pumpkin Tartlets'),
+('Creamy Pumpkin Soup');
+
 INSERT INTO ingredient (ingredientName) 
 VALUES 
+('pumpkin puree'),
+('sugar'),
 ('cinnamon'),
 ('nutmeg'),
 ('cloves'),
@@ -59,4 +64,16 @@ VALUES
 ('Whipped cream for garnish'),
 ('onion, chopped'),
 ('garlic, minced'),
-('vegetable broth');
+('vegetable broth'),
+('heavy cream'),
+('Salt and pepper to taste');
+
+--------------------
+SELECT * FROM recipe;
+
+SELECT * FROM ingredient;
+
+INSERT INTO ingredient (ingredientName) 
+VALUES 
+('heavy cream'),
+('Salt and pepper to taste');
