@@ -77,3 +77,5 @@ INSERT INTO ingredient (ingredientName)
 VALUES 
 ('heavy cream'),
 ('Salt and pepper to taste');
+
+\connect myrecipes
